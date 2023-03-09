@@ -67,5 +67,7 @@ header {
   .hhdr {
     /* margin-bottom: 10px; */
     letter-spacing: 3px;
+        line-height: 37px;
+
   }
 }
