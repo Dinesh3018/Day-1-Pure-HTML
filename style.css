@@ -1,0 +1,80 @@
+:root {
+  --grid-max-width: 77.5rem;
+  --grid-gutter: var(
+    --space-s-l,
+    clamp(2.13rem, calc(0.46rem + 2.64vw), 2.5rem)
+  );
+  --grid-columns: 12;
+}
+:root {
+  --step--2: clamp(0.78rem, calc(0.69rem + 0.45vw), 1.04rem);
+  --step--1: clamp(0.94rem, calc(0.81rem + 0.63vw), 1.3rem);
+  --step-0: clamp(1.13rem, calc(0.95rem + 0.87vw), 1.63rem);
+  --step-1: clamp(1.35rem, calc(1.11rem + 1.18vw), 2.03rem);
+  --step-2: clamp(1.62rem, calc(1.3rem + 1.6vw), 2.54rem);
+  --step-3: clamp(1.94rem, calc(1.52rem + 2.14vw), 3.17rem);
+  --step-4: clamp(2.33rem, calc(1.76rem + 2.84vw), 3.97rem);
+  --step-5: clamp(2.8rem, calc(2.05rem + 3.76vw), 4.96rem);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  /* color: rgb(38, 8, 8); */
+  /* background-color: rgb(163, 172, 60); */
+  background-image: linear-gradient(
+    to right bottom,
+    #3c6aaf,
+    #0092c7,
+    #00b3ad,
+    #50cb74,
+    #d4d445
+  );
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.div {
+  margin: 1px 1px 1px 50%;
+  padding: 1px 10px;
+  border: solid white 8px;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+}
+header {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  body {
+    padding-top: 20px;
+    font-size: 20px;
+    /* font-size: var(--grid-max-width); */
+    max-width: var(--grid-max-width);
+    padding-inline: var(--grid-gutter);
+    margin-inline: auto;
+    color: rgb(255, 242, 0);
+    padding-left: 12px;
+    margin-bottom: 20px;
+  }
+  .div {
+    position: absolute;
+    top: 40%;
+  }
+  .ttp {
+    padding-top: 60%;
+  }
+  .hhdr {
+    /* margin-bottom: 10px; */
+    letter-spacing: 3px;
+    line-height: 37px;
+  }
+}
