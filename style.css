@@ -23,32 +23,26 @@
   box-sizing: border-box;
 }
 body {
-  /* color: rgb(38, 8, 8); */
-  /* background-color: rgb(163, 172, 60); */
-  background-image: linear-gradient(
-    to right bottom,
-    #3c6aaf,
-    #0092c7,
-    #00b3ad,
-    #50cb74,
-    #d4d445
-  );
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(#e66465, #9198e5);
+  color: rgb(220, 16, 16);
+  /* background-color: rgb(200, 96, 43); */
+  background: linear-gradient(#e66465, #9198e5);
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
-  color: white;
+  /* color: white; */
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  inset: 5rem;
 }
 .div {
   margin: 1px 1px 1px 50%;
   padding: 1px 10px;
-  border: solid white 8px;
+  border: solid rgb(21, 17, 17) 2px;
   position: absolute;
-  top: 2%;
-  left: 50%;
+  inset: 5rem;
 }
 header {
   margin-bottom: 10px;
@@ -64,6 +58,7 @@ header {
     color: rgb(255, 242, 0);
     padding-left: 12px;
     margin-bottom: 20px;
+    background-color: black;
   }
   .div {
     position: absolute;
@@ -75,6 +70,6 @@ header {
   .hhdr {
     /* margin-bottom: 10px; */
     letter-spacing: 3px;
-    line-height: 37px;
+    /* line-height: 37px; */
   }
 }
