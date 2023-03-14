@@ -1,75 +1,98 @@
-:root {
-  --grid-max-width: 77.5rem;
-  --grid-gutter: var(
-    --space-s-l,
-    clamp(2.13rem, calc(0.46rem + 2.64vw), 2.5rem)
-  );
-  --grid-columns: 12;
-}
-:root {
-  --step--2: clamp(0.78rem, calc(0.69rem + 0.45vw), 1.04rem);
-  --step--1: clamp(0.94rem, calc(0.81rem + 0.63vw), 1.3rem);
-  --step-0: clamp(1.13rem, calc(0.95rem + 0.87vw), 1.63rem);
-  --step-1: clamp(1.35rem, calc(1.11rem + 1.18vw), 2.03rem);
-  --step-2: clamp(1.62rem, calc(1.3rem + 1.6vw), 2.54rem);
-  --step-3: clamp(1.94rem, calc(1.52rem + 2.14vw), 3.17rem);
-  --step-4: clamp(2.33rem, calc(1.76rem + 2.84vw), 3.97rem);
-  --step-5: clamp(2.8rem, calc(2.05rem + 3.76vw), 4.96rem);
-}
-
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+}
+/* rgb(26, 23, 23) */
+/* ffb300 */
+html {
+  font-size: 10px;
+}
+@font-face {
+  font-family: ff1;
+  src: url("fonts/ff1.otf");
+}
+@font-face {
+  font-family: ff2;
+  src: url("fonts/ff2.otf");
 }
 body {
-  background: linear-gradient(#e66465, #9198e5);
-  color: rgb(220, 16, 16);
-  /* background-color: rgb(200, 96, 43); */
-  background: linear-gradient(#e66465, #9198e5);
+  background-color: #c3c1ca;
+  font-family: ff1;
+  margin: 10px;
+}
+.head {
+  background-color: #562cd1;
+  height: 90rem;
+}
+.left {
+  font-size: 1rem;
+  width: 25rem;
+  height: 87rem;
+  background-color: #5928e5;
+  border: 1rem solid rgb(26, 23, 23);
+}
+.img {
+  width: 25rem;
+  height: 22rem;
+  background-color: #ffb300;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+}
+.img1 {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 10rem;
+}
 
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 400;
-  /* color: white; */
+.txt1 {
+  color: #101a7b;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
   position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  inset: 5rem;
+  top: 9.5rem;
+  left: 5.4rem;
+  /* text-transform: ; */
 }
-.div {
-  margin: 1px 1px 1px 50%;
-  padding: 1px 10px;
-  border: solid rgb(21, 17, 17) 2px;
+.about {
+  /* line-break: anywhere; */
+  padding: 2.5rem;
+  text-transform: lowercase;
+  line-height: 2rem;
+  word-spacing: 1rem;
+  font-family: ff2;
+  font-size: 2rem;
+}
+.aboutxt1 {
+  text-decoration: none;
+  line-height: 3.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffb300;
+  /* font-weight: 700; */
+}
+/* .aboutxt1::before {
+  content: "";
+  background-color: rgb(41, 43, 45);
   position: absolute;
-  inset: 5rem;
+  left: 0;
+  bottom: -0.3rem;
+  height: 0.3rem;
+  width: 0;
+  transition: 0.3s ease-in-out;
 }
-header {
-  margin-bottom: 10px;
-}
-@media screen and (max-width: 600px) {
-  body {
-    padding-top: 20px;
-    font-size: 20px;
-    /* font-size: var(--grid-max-width); */
-    max-width: var(--grid-max-width);
-    padding-inline: var(--grid-gutter);
-    margin-inline: auto;
-    color: rgb(255, 242, 0);
-    padding-left: 12px;
-    margin-bottom: 20px;
-    background-color: black;
-  }
-  .div {
-    position: absolute;
-    top: 40%;
-  }
-  .ttp {
-    padding-top: 60%;
-  }
-  .hhdr {
-    /* margin-bottom: 10px; */
-    letter-spacing: 3px;
-    /* line-height: 37px; */
-  }
+.aboutxt1::before:hover {
+  content: "";
+  background-color: rgb(10, 11, 11);
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  height: 0.3rem;
+  width: 100%;
+} */
+.contactxt1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffb300;
 }
