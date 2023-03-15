@@ -2,22 +2,27 @@
   margin: 0px;
   padding: 0px;
 }
+/* @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"); */
 /* rgb(26, 23, 23) */
 /* ffb300 */
 html {
   font-size: 10px;
 }
 @font-face {
-  font-family: ff1;
-  src: url("fonts/ff1.otf");
+  font-family: ff3;
+  src: url("fonts/ff3.otf");
 }
 @font-face {
-  font-family: ff2;
-  src: url("fonts/ff2.otf");
+  font-family: topletterandnumber;
+  src: url("fonts/topletterandnumber.ttf");
+}
+@font-face {
+  font-family: ff4;
+  src: url("fonts/ff4.ttf");
 }
 body {
   background-color: #c3c1ca;
-  font-family: ff1;
+  font-family: topletterandnumber;
   margin: 10px;
 }
 .head {
@@ -26,13 +31,13 @@ body {
 }
 .left {
   font-size: 1rem;
-  width: 25rem;
+  width: 28rem;
   height: 87rem;
   background-color: #5928e5;
   border: 1rem solid rgb(26, 23, 23);
 }
 .img {
-  width: 25rem;
+  width: 28rem;
   height: 22rem;
   background-color: #ffb300;
   clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
@@ -42,29 +47,33 @@ body {
   height: 10rem;
   position: absolute;
   top: 1.5rem;
-  left: 10rem;
+  left: 12rem;
 }
 
 .txt1 {
+  letter-spacing: 0.5rem;
   color: #101a7b;
   text-align: center;
   line-height: 1.5;
   font-size: 1.5rem;
   position: absolute;
   top: 9.5rem;
-  left: 5.4rem;
+  left: 4rem;
   /* text-transform: ; */
 }
 .about {
   /* line-break: anywhere; */
-  padding: 2.5rem;
-  text-transform: lowercase;
-  line-height: 2rem;
-  word-spacing: 1rem;
-  font-family: ff2;
+  padding: 3.5rem;
+  /* text-transform: lowercase; */
+  line-height: 2.3rem;
+  word-spacing: 0.5rem;
+  font-weight: 900;
+  font-family: ff4;
   font-size: 2rem;
 }
 .aboutxt1 {
+  font-family: ff3;
+  letter-spacing: 0.5rem;
   text-decoration: none;
   line-height: 3.5rem;
   font-size: 2.5rem;
@@ -72,27 +81,118 @@ body {
   color: #ffb300;
   /* font-weight: 700; */
 }
-/* .aboutxt1::before {
-  content: "";
-  background-color: rgb(41, 43, 45);
+/* content: "";
   position: absolute;
-  left: 0;
-  bottom: -0.3rem;
-  height: 0.3rem;
-  width: 0;
-  transition: 0.3s ease-in-out;
-}
-.aboutxt1::before:hover {
-  content: "";
-  background-color: rgb(10, 11, 11);
-  position: absolute;
-  left: 0;
-  bottom: -0.3rem;
+  background-color: black;
   height: 0.3rem;
   width: 100%;
-} */
+  left: 0;
+  bottom: -1rem; */
+
 .contactxt1 {
   text-align: center;
   font-size: 2.5rem;
   color: #ffb300;
+  font-family: ff3;
+  letter-spacing: 0.5rem;
+}
+@keyframes logoanimw {
+  from {
+    transform: rotate3d(1, 1, 8, 30deg);
+  }
+}
+@keyframes tst1 {
+  from {
+    transform: rotate3d(1, 1, 8, -10deg);
+  }
+}
+
+.phone {
+  display: flex;
+  justify-content: flex-start;
+  height: 4rem;
+  width: 4rem;
+  padding: 1.5rem;
+}
+.phone:hover {
+  animation-name: logoanimw;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+.gmail {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  height: 4rem;
+  width: 4rem;
+}
+.gmail:hover {
+  animation-name: tst1;
+  animation-duration: 3s;
+}
+.loca {
+  padding: 1.5rem;
+
+  height: 4rem;
+  width: 4rem;
+}
+.loca:hover {
+  animation-name: tst1;
+  animation-duration: 3s;
+}
+
+.infotxt1 {
+  list-style: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  position: absolute;
+  top: 45rem;
+  left: 7.5rem;
+  padding: 1rem;
+  line-height: 7.5rem;
+}
+.follow {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffb300;
+  font-family: ff3;
+  letter-spacing: 0.5rem;
+}
+@keyframes anime2 {
+  from {
+    transform: rotate3d(1, 1, 1, 45deg);
+  }
+  to {
+    transform: rotate(25deg);
+  }
+}
+
+.twt {
+  height: 4.6rem;
+  padding: 1rem;
+  position: absolute;
+  left: 7rem;
+}
+.twt:hover {
+  animation-name: anime2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+.linki {
+  padding: 1rem;
+  position: absolute;
+  left: 18rem;
+}
+.linki:hover {
+  animation-name: anime1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes anime1 {
+  from {
+    transform: rotate3d(1, 1, 1, 45deg);
+  }
+  to {
+    transform: rotate(-25deg);
+  }
 }
