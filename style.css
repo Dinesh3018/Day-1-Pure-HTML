@@ -9,6 +9,10 @@ html {
   font-size: 10px;
 }
 @font-face {
+  font-family: ff5;
+  src: url("fonts/ff5.ttf");
+}
+@font-face {
   font-family: ff3;
   src: url("fonts/ff3.otf");
 }
@@ -24,6 +28,8 @@ body {
   background-color: #c3c1ca;
   font-family: topletterandnumber;
   margin: 10px;
+  height: 100vh;
+  /* width: 100vw; */
 }
 .head {
   background-color: #562cd1;
@@ -35,6 +41,7 @@ body {
   height: 87rem;
   background-color: #5928e5;
   border: 1rem solid rgb(26, 23, 23);
+  z-index: -1;
 }
 .img {
   width: 28rem;
@@ -42,6 +49,7 @@ body {
   background-color: #ffb300;
   clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
 }
+
 .img1 {
   width: 10rem;
   height: 10rem;
@@ -58,8 +66,11 @@ body {
   font-size: 1.5rem;
   position: absolute;
   top: 9.5rem;
-  left: 4rem;
+  left: 7rem;
   /* text-transform: ; */
+}
+.txt2 {
+  list-style: none;
 }
 .about {
   /* line-break: anywhere; */
@@ -115,7 +126,7 @@ body {
   padding: 1.5rem;
 }
 .phone:hover {
-  animation-name: logoanimw;
+  animation-name: tst1;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
 }
@@ -132,7 +143,6 @@ body {
 }
 .loca {
   padding: 1.5rem;
-
   height: 4rem;
   width: 4rem;
 }
@@ -146,12 +156,14 @@ body {
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   position: absolute;
-  top: 45rem;
+  top: 44.5rem;
   left: 7.5rem;
   padding: 1rem;
   line-height: 7.5rem;
+  cursor: pointer;
 }
 .follow {
+  padding: 1rem;
   text-align: center;
   font-size: 2.5rem;
   color: #ffb300;
@@ -195,4 +207,324 @@ body {
   to {
     transform: rotate(-25deg);
   }
+}
+.topright {
+  padding: 1rem;
+
+  height: 36rem;
+  width: 117rem;
+  border: 1rem solid black;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  /* z-index: 1; */
+}
+.exp {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+}
+.exptxt1 {
+  cursor: grab;
+  position: absolute;
+  top: 4.5rem;
+  left: 12rem;
+  font-size: 2.5rem;
+  color: #ffb300;
+  font-family: ff3;
+  letter-spacing: 0.5rem;
+}
+
+.topright1 {
+  border: 0.5rem solid #1a237c;
+  background-color: #6f46e9;
+  height: 35rem;
+  width: 47%;
+}
+/* hiver effect not wrked properly */
+/* .topright1::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.6),
+    transparent 40%
+  );
+  content: "";
+  border-radius: inherit;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+} */
+/* .lines {
+  width: 1rem;
+  height: 20rem;
+  background-color: #ffb300;
+  position: absolute;
+  top: 10rem;
+  left: 9rem;
+} */
+.list1 {
+  text-decoration: none;
+  color: white;
+  font-size: 3.5rem;
+  font-family: ff5;
+
+  /* position: absolute; */
+  /* position: absolute; */
+  letter-spacing: 0.3rem;
+  display: block;
+  line-height: 7rem;
+}
+.a1 {
+  position: absolute;
+  top: 9.5rem;
+  left: 9rem;
+}
+.a2 {
+  position: absolute;
+  top: 15.5rem;
+  left: 9rem;
+}
+.a3 {
+  position: absolute;
+  top: 22.5rem;
+  left: 9rem;
+}
+a::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  height: 0.3rem;
+  width: 0;
+  transition: 0.3s ease-in-out;
+}
+.list1:hover {
+  color: #e2ab2b;
+}
+a:hover:before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  height: 0.3rem;
+  width: 100%;
+}
+.list2 {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  font-family: ff5;
+
+  /* position: absolute; */
+  /* position: absolute; */
+  letter-spacing: 0.3rem;
+  display: block;
+  line-height: 7rem;
+}
+.list2:hover {
+  color: #e2ab2b;
+}
+.b1 {
+  position: absolute;
+  top: 8rem;
+  left: 9rem;
+}
+.b2 {
+  position: absolute;
+  top: 14rem;
+  left: 9rem;
+}
+.b3 {
+  position: absolute;
+  top: 20rem;
+  left: 9rem;
+}
+.img11 {
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: 11rem;
+  left: 28rem;
+}
+.img112 {
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: 17rem;
+  left: 29.4rem;
+}
+.img113 {
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: 24rem;
+  left: 24.5rem;
+}
+/* .topright1:hover {
+  opacity: 0.5;
+} */
+
+.topleft1 {
+  border: 0.5rem solid #1a237c;
+  background-color: #6f46e9;
+  height: 35rem;
+  width: 47%;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  padding-right: 1rem;
+}
+.img2 {
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 2.5rem;
+}
+.lftx1 {
+  cursor: grab;
+  letter-spacing: 0.3rem;
+  color: #ffb300;
+  font-size: 2.5rem;
+  position: absolute;
+  left: 11rem;
+  top: 2.5rem;
+}
+.mid1 {
+  background-color: #5928e5;
+  position: absolute;
+  left: 30rem;
+  top: 40rem;
+  padding: 1rem;
+  height: 46rem;
+  width: 117rem;
+  border: 1rem solid black;
+}
+.imgpp1 {
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  top: 3rem;
+  left: 3.5rem;
+}
+.mid2 {
+  border: 0.5rem solid #1a237c;
+  background-color: #6f46e9;
+  height: 99%;
+  width: 99%;
+}
+.ppskl {
+  cursor: grab;
+  position: absolute;
+  top: 6.5rem;
+  left: 13.5rem;
+  font-size: 2.8rem;
+  color: #ffb300;
+  font-family: ff3;
+  letter-spacing: 0.5rem;
+}
+.lines {
+  background-color: white;
+  height: 0.5rem;
+  width: 85%;
+  margin: 2rem;
+  position: absolute;
+  top: 14rem;
+  left: 11rem;
+  border-radius: 0.7rem;
+}
+.lines1 {
+  background-color: white;
+  height: 0.5rem;
+  width: 85%;
+  margin: 2rem;
+  position: absolute;
+  top: 20rem;
+  left: 11rem;
+  border-radius: 0.7rem;
+}
+.lines2 {
+  background-color: white;
+  height: 0.5rem;
+  width: 85%;
+  margin: 2rem;
+  position: absolute;
+  top: 26rem;
+  left: 11rem;
+  border-radius: 0.7rem;
+}
+.lines3 {
+  background-color: white;
+  height: 0.5rem;
+  width: 85%;
+  margin: 2rem;
+  position: absolute;
+  top: 32rem;
+  left: 11rem;
+  border-radius: 0.7rem;
+}
+.linesblk {
+  background-color: #e2ab2b;
+  height: 1rem;
+  width: 90%;
+  position: absolute;
+  top: -0.2rem;
+  border-radius: 0.7rem;
+  transition: 0.3s ease-in-out;
+}
+.linesblk1 {
+  background-color: #e2ab2b;
+  height: 1rem;
+  width: 85%;
+  position: absolute;
+  top: -0.2rem;
+  border-radius: 0.7rem;
+  transition: 0.3s ease-in-out;
+}
+.linesblk2 {
+  background-color: #e2ab2b;
+  height: 1rem;
+  width: 70%;
+  position: absolute;
+  top: -0.2rem;
+  border-radius: 0.7rem;
+  transition: 0.3s ease-in-out;
+}
+.linesblk3 {
+  background-color: #e2ab2b;
+  height: 1rem;
+  width: 50%;
+  position: absolute;
+  top: -0.2rem;
+  border-radius: 0.7rem;
+  transition: 0.3s ease-in-out;
+}
+.ppskl1 {
+  font-size: 2rem;
+  position: absolute;
+  top: 15rem;
+  left: 3.5rem;
+}
+.ppskl2 {
+  font-size: 2rem;
+  position: absolute;
+  top: 21rem;
+  left: 3rem;
+}
+.ppskl3 {
+  font-size: 2rem;
+  position: absolute;
+  top: 27.2rem;
+  left: 2.5rem;
+}
+.ppskl4 {
+  font-size: 2rem;
+  position: absolute;
+  top: 33rem;
+  left: 6rem;
 }
