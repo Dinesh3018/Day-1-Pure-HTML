@@ -38,24 +38,24 @@ body {
 .left {
   font-size: 1rem;
   width: 28rem;
-  height: 87rem;
+  height: 150rem;
   background-color: #5928e5;
   border: 1rem solid rgb(26, 23, 23);
   z-index: -1;
 }
 .img {
   width: 28rem;
-  height: 22rem;
+  height: 40rem;
   background-color: #ffb300;
   clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
 }
 
 .img1 {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   position: absolute;
   top: 1.5rem;
-  left: 12rem;
+  left: 8.5rem;
 }
 
 .txt1 {
@@ -63,10 +63,10 @@ body {
   color: #101a7b;
   text-align: center;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: absolute;
-  top: 9.5rem;
-  left: 7rem;
+  top: 17rem;
+  left: 5.5rem;
   /* text-transform: ; */
 }
 .txt2 {
@@ -91,7 +91,9 @@ body {
   text-align: center;
   color: #ffb300;
   /* font-weight: 700; */
+  cursor: pointer;
 }
+
 /* content: "";
   position: absolute;
   background-color: black;
@@ -107,16 +109,6 @@ body {
   font-family: ff3;
   letter-spacing: 0.5rem;
 }
-@keyframes logoanimw {
-  from {
-    transform: rotate3d(1, 1, 8, 30deg);
-  }
-}
-@keyframes tst1 {
-  from {
-    transform: rotate3d(1, 1, 8, -10deg);
-  }
-}
 
 .phone {
   display: flex;
@@ -124,11 +116,11 @@ body {
   height: 4rem;
   width: 4rem;
   padding: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .phone:hover {
-  animation-name: tst1;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
+  transform: scale(1.1);
 }
 .gmail {
   padding: 1.5rem;
@@ -136,27 +128,31 @@ body {
   justify-content: flex-start;
   height: 4rem;
   width: 4rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .gmail:hover {
-  animation-name: tst1;
-  animation-duration: 3s;
+  transform: scale(1.1);
 }
 .loca {
   padding: 1.5rem;
   height: 4rem;
   width: 4rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .loca:hover {
-  animation-name: tst1;
-  animation-duration: 3s;
+  transform: scale(1.1);
 }
 
 .infotxt1 {
-  list-style: none;
+  /* text-align: center; */
+  /* list-style: none; */
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
+  line-break: initial;
   position: absolute;
-  top: 44.5rem;
+  top: 83rem;
   left: 7.5rem;
   padding: 1rem;
   line-height: 7.5rem;
@@ -170,44 +166,60 @@ body {
   font-family: ff3;
   letter-spacing: 0.5rem;
 }
-@keyframes anime2 {
-  from {
-    transform: rotate3d(1, 1, 1, 45deg);
-  }
-  to {
-    transform: rotate(25deg);
-  }
-}
 
 .twt {
   height: 4.6rem;
   padding: 1rem;
   position: absolute;
   left: 7rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .twt:hover {
-  animation-name: anime2;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
+  transform: scale(1.4);
 }
 .linki {
   padding: 1rem;
   position: absolute;
   left: 18rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  height: 5rem;
+  width: 5rem;
 }
 .linki:hover {
-  animation-name: anime1;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
+  transform: scale(1.4);
 }
-@keyframes anime1 {
-  from {
-    transform: rotate3d(1, 1, 1, 45deg);
-  }
-  to {
-    transform: rotate(-25deg);
-  }
+
+.be {
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 124rem;
+  left: 6.5rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
+.be:hover {
+  transform: scale(1.4);
+}
+.yt {
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 124rem;
+  left: 18rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.yt:hover {
+  transform: scale(1.4);
+}
+
 .topright {
   padding: 1rem;
 
@@ -296,9 +308,10 @@ body {
   top: 22.5rem;
   left: 9rem;
 }
-a::before {
+li::before {
   content: "";
   background-color: black;
+
   position: absolute;
   left: 0;
   bottom: -0.5rem;
@@ -309,7 +322,7 @@ a::before {
   transition: transform 0.3s linear;
 }
 
-a:hover:before {
+li:hover:before {
   content: "";
   transform: scaleX(1);
   /* background-color: black;
@@ -549,6 +562,7 @@ a:hover:before {
   width: 100%;
   height: 0.5rem;
   border-radius: 20px;
+  /* background-color: aqua; */
   border: 0.2rem solid #101a7b;
   position: absolute;
   top: -0.2rem;
@@ -596,4 +610,267 @@ a:hover:before {
   position: absolute;
   top: 33rem;
   left: 6rem;
+}
+.footer {
+  background-color: #5928e5;
+  position: absolute;
+  left: 30rem;
+  top: 89rem;
+  padding: 1rem;
+  height: 60rem;
+  width: 117rem;
+  border: 1rem solid rgb(0, 0, 0);
+}
+.softar1 {
+  border: 0.5rem solid #1a237c;
+  background-color: #6f46e9;
+  height: 99%;
+  width: 99%;
+}
+.softar2 {
+  border: 0.5rem solid #1a237c;
+  background-color: #6f46e9;
+  height: 32rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 97.3%;
+}
+.imgss {
+  height: 6.5rem;
+  width: 6.5rem;
+  padding: 1.3rem;
+}
+.imgss2 {
+  height: 6.5rem;
+  width: 6.5rem;
+  padding: 1.3rem;
+  position: absolute;
+  top: 33rem;
+  left: 1rem;
+}
+.imgss3 {
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  bottom: -20rem;
+  left: 10rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.imgss3:hover {
+  transform: scale(1.1);
+}
+.imgss4 {
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  bottom: -20rem;
+  left: 29rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.imgss4:hover {
+  transform: scale(1.1);
+}
+.imgss5 {
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  bottom: -20rem;
+  margin-right: 5rem;
+  right: 22rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.imgss5:hover {
+  transform: scale(1.1);
+}
+.imgss6 {
+  height: 9rem;
+  width: 9rem;
+  position: absolute;
+  bottom: -20rem;
+  right: 6rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.imgss6:hover {
+  transform: scale(1.1);
+}
+.imgss7 {
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  bottom: -20rem;
+  left: 55rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.imgss7:hover {
+  transform: scale(1.1);
+}
+.softxt2 {
+  cursor: grab;
+  position: absolute;
+  top: 36rem;
+  left: 10.5rem;
+  font-size: 2.8rem;
+  color: #ffb300;
+  font-family: ff3;
+  letter-spacing: 0.5rem;
+}
+.softxt1 {
+  cursor: grab;
+  position: absolute;
+  top: 3.5rem;
+  left: 9.5rem;
+  font-size: 2.8rem;
+  color: #ffb300;
+  font-family: ff3;
+  letter-spacing: 0.5rem;
+}
+.all {
+  display: flex;
+}
+.circle-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 16rem);
+  grid-gap: 8rem;
+  margin-top: 10rem;
+  margin-left: 15rem;
+  width: 190px;
+  height: 190px;
+  background: #d9d7da;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: #101a7b;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 13px;
+  margin-left: 13px;
+  color: white;
+  position: absolute;
+  z-index: 100;
+  display: block;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: ff5;
+}
+.cctv1 {
+  cursor: pointer;
+}
+
+.cctv1:hover {
+  color: #ffb300;
+}
+.cct3 {
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  top: 9.5rem;
+  color: black;
+  font-family: ff5;
+  left: 1rem;
+}
+.cct1 {
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  top: 9.5rem;
+  color: black;
+  font-family: ff5;
+}
+.cct2 {
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  left: 1rem;
+  top: 9.5rem;
+  color: black;
+  font-family: ff5;
+}
+
+/* color animation */
+
+.mask .fill-1 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #e2ab2b;
+}
+
+.mask.full-1,
+.circle .fill-1 {
+  animation: fill-1 ease-in-out 3s;
+  transform: rotate(160deg);
+}
+
+@keyframes fill-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(160deg);
+  }
+}
+
+/* 2nd bar */
+
+.mask .fill-2 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #e2ab2b;
+}
+
+.mask.full-2,
+.circle .fill-2 {
+  animation: fill-2 ease-in-out 3s;
+  transform: rotate(148deg);
+}
+
+@keyframes fill-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(148deg);
+  }
+}
+
+/* 3rd progress bar */
+.mask .fill-3 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #e2ab2b;
+}
+
+.mask.full-3,
+.circle .fill-3 {
+  animation: fill-3 ease-in-out 3s;
+  transform: rotate(140deg);
+}
+
+@keyframes fill-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(140deg);
+  }
 }
