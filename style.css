@@ -368,6 +368,10 @@ li:hover:before {
   position: absolute;
   top: 11rem;
   left: 28rem;
+  transition: all 0.2s ease-in-out;
+}
+.img11:hover {
+  transform: scale(1.5);
 }
 .img112 {
   height: 4rem;
@@ -375,6 +379,10 @@ li:hover:before {
   position: absolute;
   top: 17rem;
   left: 29.4rem;
+  transition: all 0.2s ease-in-out;
+}
+.img112:hover {
+  transform: scale(1.5);
 }
 .img113 {
   height: 4rem;
@@ -382,6 +390,10 @@ li:hover:before {
   position: absolute;
   top: 24rem;
   left: 24.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.img113:hover {
+  transform: scale(1.5);
 }
 /* .topright1:hover {
   opacity: 0.5;
@@ -873,4 +885,24 @@ li:hover:before {
   100% {
     transform: rotate(140deg);
   }
+}
+.foots {
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+
+  cursor: pointer;
+}
+.tp {
+  text-decoration: none;
+  position: absolute;
+  color: #023047;
+  top: 2rem;
+  left: 4rem;
+}
+.tp1 {
+  text-decoration: none;
+  color: #000000;
+  position: absolute;
+  bottom: -71rem;
+  right: 4rem;
 }
