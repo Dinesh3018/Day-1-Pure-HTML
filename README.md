@@ -7,3 +7,10 @@ here we Can see the how to resume was Build
 It is possible to make it responsive: yes💯🎉
  may be I will make this happens in upcoming days 
 Adeed top and bottom credit text 💖
+
+
+PREVIEW 😎
+
+------------------------------------------------
+https://gm-prj-1resume.vercel.app
+------------------------------------------------
