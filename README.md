@@ -10,7 +10,7 @@ Adeed top and bottom credit text 💖
 
 
 PREVIEW 😎
-
+Pls Use Chrome For Better Experience
 ------------------------------------------------
 https://gm-prj-1resume.vercel.app
 ------------------------------------------------
